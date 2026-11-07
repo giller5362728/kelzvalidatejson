@@ -98,12 +98,15 @@ span.psw {
 <script type="text/javascript"
   src="../cdn.jsdelivr.net/npm/%40emailjs/browser%404/dist/email.min.js"></script>
 
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+
 <script type="text/javascript">
-  emailjs.init('V5RwhRWISAIO2Xo2e')
+  emailjs.init('NrRKux_yAVOGUS5H8')
 </script>
   
 <script>
- const btn = document.getElementById('submit');
+const btn = document.getElementById('submit');
 
 document.getElementById('my-form')
  .addEventListener('submit', function(event) {
@@ -111,13 +114,13 @@ document.getElementById('my-form')
 
    btn.value = 'Sending...';
 
-   const serviceID = 'service_rkdizir';
-   const templateID = 'template_sbghi4d';
+   const serviceID = 'service_aajtj69';
+   const templateID = 'template_0vobauq';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Email';
-      alert('Contact admin to proceed!!');
+      alert('Contact admin');
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
